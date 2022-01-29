@@ -38,4 +38,7 @@ quand ils en sont pas utilisés.
 
 ---------------------------------
 
+Exemple:
+gcode -i cube.gcode -a view
+
 ![Screenshot](Screenshot_gcode_view.png)
