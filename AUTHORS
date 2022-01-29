@@ -1,0 +1,6 @@
+Programme crée par Sylvurik
+but :
+- modifier un fichier gcode pour intégrer un MCODE pour activer/désactiver les moteurs pas à pas
+quand ils en sont pas utilisés.
+- faire des transformations géométriques sur des fichiers .gcode
+

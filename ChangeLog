@@ -1,0 +1,39 @@
+v0.1 :
+- permet de modifer  des .gcode pour activer/désactiver les moteurs quand ils 
+sont non-utilisé.
+
+v0.2:
+- gcode s'utilise en une ligne de commande, il ne demande plus les chemins des
+fichier il faut lui spécifier grâce à <-i>(input) et <-o>(output)
+- gcode est capable de s'utiliser à n dimension avec l'option -d
+	-d XY | -d XYZ | -d XYZADGBHUJKI
+- gcode est maintenant capable de faire des changements de base en utilisant
+l'option <-a changebase>
+- une aide est fournie avec l'option <-h> 
+
+v0.3:
+- Beaucoup de nouveau dans gcode, de nouvelles actions sont possible tel que:
+-les tranlations <-a translation ...>
+	gcode -i ... -o ... -d XY -a translation <valeur> (anciennement)
+la translation se fait sur tout les axes de <-d ...> avec la même valeur.
+- possibilitée de convertir les coordonnées en mm->inch avec <-a mmtoinch>
+- 											en inch->mm avec <-a inchtomm>
+- gcode peut désormais aider la compensation de jeu mécanique avec l'action <-a clearance>
+	-a clearance X Y Z A
+
+v0.4:
+- l'action de translation ne s'utilise plus de la même manière que à la version 0.3 (voir -h)
+- nouvelle action: <-a view>: permet de visualiser des fichiers .gcode
+
+
+--- dans les versions futur ---
+- pouvoir effectuer des transformations sur une partie du gcode
+- améliorer l'outil pour visualiser les .gcode
+- faire des changements de base cylindrique / sphérique
+- ajouter plus d'option à l'action mcode:
+	- désactiver les moteurs après un temps/une distance d'inactivitée
+	- activer les moteurs avant un temps/une distance d'activitée
+- créer un outil d'analyse du gcode:
+	- calculer le temps d'execution du .gcode
+	- ...
+- générer un .stl depuis un fichier .gcode
