@@ -1,0 +1,28 @@
+---------- INSTALL ----------
+juste compiler le programme
+Linux(Debian):
+
+	les dépendance sont: libeigen, irrlicht3D
+	installation des dépendances:
+
+	sudo apt-get install libeigen3-dev libirrlicht-dev # sur debian 
+
+	./configure
+	make
+	sudo make install
+
+-----------------------------
+
+--------- UNINSTALL ---------
+Linux(Debian):
+
+	sudo make uninstall
+-----------------------------
+
+-------------- USE --------------
+S'utilise en ligne de commande 
+pour connaître les différents usages, faites:
+
+	gcode -h
+
+---------------------------------
